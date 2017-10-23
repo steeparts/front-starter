@@ -1,0 +1,12 @@
+-
+	var menuItems = [
+		{title: "Главная", 	image: "img/1.jpg", link: "index.html"},
+		{title: "О нас", 	image: "img/2.jpg", link: "about.html"}, 
+		{title: "Контакты", image: "img/3.jpg", link: "contacts.html"}
+	]
+
+mixin menu-item(item)
+	li.nav-menu__item
+		a(class="nav-menu__item-link" href=item.link)
+			img.nav-menu__item-img(src=item.image)
+			h2.nav-menu__item-title=item.title
